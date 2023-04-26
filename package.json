@@ -1,0 +1,70 @@
+{
+    "name": "cadvanced_server",
+    "version": "2.0.0",
+    "description": "",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "lint": "eslint .",
+        "dev": "babel-node src/index.js",
+        "mock": "babel-node mock/src/index.js",
+        "clean": "rm -rf build && mkdir build",
+        "build-server": "babel -d ./build ./src -D",
+        "build": "npm run clean && npm run build-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Chuckatron/cadvanced_server.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Chuckatron/cadvanced_server/issues"
+    },
+    "homepage": "https://github.com/Chuckatron/cadvanced_server#readme",
+    "dependencies": {
+        "ajv": "^6.9.1",
+        "ajv-keywords": "^3.4.0",
+        "apollo-cache-control": "^0.15.0",
+        "apollo-server": "^2.9.12",
+        "apollo-tracing": "^0.1.3",
+        "axios": "^0.19.0",
+        "body-parser": "^1.18.3",
+        "cors": "^2.8.5",
+        "deep-cleaner": "^1.1.2",
+        "dotenv": "^5.0.1",
+        "express": "^4.16.4",
+        "express-interceptor": "^1.2.0",
+        "express-jwt": "^5.3.1",
+        "graphql": "^0.13.2",
+        "graphql-extensions": "0.16.0",
+        "graphql-subscriptions": "^0.5.8",
+        "graphql-tools": "^2.23.1",
+        "hex2dec": "^1.1.2",
+        "https": "^1.0.0",
+        "jsonwebtoken": "^8.5.0",
+        "moment": "^2.24.0",
+        "multer": "^1.4.2",
+        "passport": "^0.4.0",
+        "passport-steam": "^1.0.10",
+        "pg-hstore": "^2.3.2",
+        "pm2": "^3.5.1",
+        "sequelize": "^6.29.3",
+        "uuid": "^3.3.2"
+    },
+    "devDependencies": {
+        "apollo-server-express": "^2.4.6",
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^8.0.5",
+        "babel-polyfill": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "casual": "^1.6.0",
+        "eslint": "^4.19.1",
+        "eslint-config-google": "^0.9.1",
+        "pg": "^8.10.0",
+        "rimraf": "^2.6.3",
+        "sequelize-cli": "^6.6.0",
+        "sequelize-fixtures": "^1.1.1"
+    }
+}
